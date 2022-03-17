@@ -8,4 +8,5 @@ Initial robot description.
 
 ### Added
 
+- Robot description (kinematics, inertias, collisions) in URDF
 - Scripts to compute box and cylinder inertias
