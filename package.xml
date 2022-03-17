@@ -1,0 +1,10 @@
+<package>
+  <name>upkie_description</name>
+  <version>1.0.0</version>
+  <description>Description package for the Upkie wheeled biped robot</description>
+  <author>Stéphane Caron</author>
+  <maintainer email="stephane.caron@normalesup.org">Stéphane Caron</maintainer>
+  <license>GPLv3</license>
+  <url>https://github.com/tasts-robots/upkie_description</url>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
