@@ -2,8 +2,8 @@
 
 URDF description for the [Upkie](https://www.youtube.com/watch?v=NO_TkHGS0wQ) wheeled biped. See also:
 
-- [3D printing files](https://www.prusaprinters.org/prints/127831-upkie-wheeled-biped-robot/files)
-- [Build instructions](https://www.prusaprinters.org/prints/127831-upkie-wheeled-biped-robot)
+- [3D print files](https://www.printables.com/model/127831-upkie-wheeled-biped-robot/files)
+- [Build instructions](https://www.printables.com/model/127831-upkie-wheeled-biped-robot)
 
 ## License
 
