@@ -5,6 +5,8 @@ URDF description for the [Upkie](https://www.youtube.com/watch?v=NO_TkHGS0wQ) wh
 - [3D print files](https://www.printables.com/model/127831-upkie-wheeled-biped-robot/files)
 - [Build instructions](https://www.printables.com/model/127831-upkie-wheeled-biped-robot)
 
+Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
+
 ## License
 
 The GPL 3.0 license applies to all files in this repository, to the exception of the [mjbots](meshes/mjbots) (Apache 2.0) and [wheel\_tire](meshes/wheel_tire) (CC-BY 4.0) meshes. See the license files in their respective folders for details.
