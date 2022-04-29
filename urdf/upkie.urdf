@@ -125,7 +125,7 @@ And in case of doubt:
     </link>
 
     <joint name="imu_fix" type="fixed">
-        <origin rpy="0 0 0" xyz="0 0 0"/>  <!-- no translation -->
+        <origin rpy="0 0 3.141592653589793" xyz="0 0 0"/>  <!-- no translation -->
         <parent link="base" />
         <child link="imu" />
     </joint>
