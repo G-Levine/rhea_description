@@ -2,7 +2,7 @@
 
 ## License
 
-Adapted from [Car Rim Collection Set 4](https://www.thingiverse.com/thing:3014733) by bramesh501 (July 22, 2018) which is licensed under the [Creative Commons - Attribution](https://creativecommons.org/licenses/by/4.0/) license.
+Adapted from [Car Rim Collection Set 4](https://www.thingiverse.com/thing:3014733) by bramesh501 (July 22, 2018) which is licensed under the [Creative Commons - Attribution (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
 
 ## Changes
 
