@@ -9,4 +9,4 @@ Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mj
 
 ## License
 
-The GPL 3.0 license applies to all files in this repository, to the exception of the [mjbots](meshes/mjbots) (Apache 2.0) and [wheel\_tire](meshes/wheel_tire) (CC-BY 4.0) meshes. See the license files in their respective folders for details.
+The Apache 2.0 license applies to all files in this repository, to the exception of the [wheel\_tire](meshes/wheel_tire) mesh which is under the CC BY 4.0 license. Meshes from [mjbots](meshes/mjbots) are also Apache 2.0. See the files in their respective folders for more details.
