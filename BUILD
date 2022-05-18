@@ -14,8 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-load("//tools/lint:lint.bzl", "add_lint_tests")
-
 package(default_visibility = ["//visibility:public"])
 
 filegroup(
@@ -25,5 +23,3 @@ filegroup(
         "urdf/upkie.urdf",
     ])
 )
-
-add_lint_tests(enable_clang_format_lint = True)
