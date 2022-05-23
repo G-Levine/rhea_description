@@ -21,10 +21,10 @@ URDF description for the Upkie wheeled biped.
 
 import os
 
-__version__ = "1.0.0.3"
+__version__ = "1.0.0.4"
 
 # Path to upkie_description
-path = os.path.realpath(__file__)
+path = os.path.dirname(os.path.realpath(__file__))
 
 # Path to the meshes folder
 meshes_path = os.path.join(path, "meshes")
