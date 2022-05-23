@@ -23,8 +23,13 @@ import os
 
 __version__ = "1.0.0.3"
 
-urdf_path = os.path.join(os.path.realpath(__file__), "urdf", "upkie.urdf")
+# Path to upkie_description
+path = os.path.realpath(__file__)
+
+# Path to the robot's URDF
+urdf_path = os.path.join(path, "urdf", "upkie.urdf")
 
 __all__ = [
+    "path",
     "urdf_path",
 ]
