@@ -37,3 +37,9 @@ Changelog = "https://github.com/tasts-robots/upkie_description/blob/master/CHANG
 
 [tool.black]
 line-length = 79
+
+[tool.flit.sdist]
+include = [
+    "upkie_description/meshes",
+    "upkie_description/urdf",
+]
