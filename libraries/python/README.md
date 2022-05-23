@@ -11,4 +11,31 @@ Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mj
 
 ## Python module
 
-This module provides convenience functions to retrieve Upkie's model from a Python program.
+This module helps retrieve Upkie's model from a Python program. Assuming we import it by:
+
+```python
+import upkie_description
+```
+
+We can then use the following paths:
+
+<dl>
+    <dt>
+        <code>upkie_description.path</code>
+    </dt>
+    <dd>
+        Path to the ``upkie_description`` folder itself.
+    </dd>
+    <dt>
+        <code>upkie_description.meshes_path</code>
+    </dt>
+    <dd>
+        Path to the ``meshes`` folder.
+    </dd>
+    <dt>
+        <code>upkie_description.urdf_path</code>
+    </dt>
+    <dd>
+        Path to the ``upkie.urdf`` URDF file of the model.
+    </dd>
+</dl>

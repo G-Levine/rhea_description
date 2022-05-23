@@ -21,7 +21,7 @@ URDF description for the Upkie wheeled biped.
 
 import os
 
-__version__ = "1.0.0.4"
+__version__ = "1.1.0"
 
 # Path to upkie_description
 path = os.path.dirname(os.path.realpath(__file__))
