@@ -19,4 +19,4 @@
 URDF description for the Upkie wheeled biped.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.0.1"
