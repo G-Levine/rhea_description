@@ -26,10 +26,14 @@ __version__ = "1.0.0.3"
 # Path to upkie_description
 path = os.path.realpath(__file__)
 
+# Path to the meshes folder
+meshes_path = os.path.join(path, "meshes")
+
 # Path to the robot's URDF
 urdf_path = os.path.join(path, "urdf", "upkie.urdf")
 
 __all__ = [
+    "meshes_path",
     "path",
     "urdf_path",
 ]
