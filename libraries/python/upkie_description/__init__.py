@@ -19,4 +19,12 @@
 URDF description for the Upkie wheeled biped.
 """
 
+import os
+
 __version__ = "1.0.0.3"
+
+urdf_path = os.path.join(os.path.realpath(__file__), "urdf", "upkie.urdf")
+
+__all__ = [
+    "urdf_path",
+]
