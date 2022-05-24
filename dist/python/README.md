@@ -26,18 +26,18 @@ It then provides the following paths:
         <code>upkie_description.path</code>
     </dt>
     <dd>
-        Path to the <code>upkie_description</code> folder itself.
+        Path to the "upkie_description" folder itself.
     </dd>
     <dt>
         <code>upkie_description.meshes_path</code>
     </dt>
     <dd>
-        Path to the <code>meshes</code> folder.
+        Path to the "meshes" folder.
     </dd>
     <dt>
         <code>upkie_description.urdf_path</code>
     </dt>
     <dd>
-        Path to the <code>upkie.urdf</code> URDF file of the model.
+        Path to the URDF file of the model.
     </dd>
 </dl>
