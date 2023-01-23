@@ -4,13 +4,9 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/upkie_description)](https://pypi.org/project/upkie_description/)
 
-URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped. See also:
+:warning: **This module has been deprecated in favor of [`robot_descriptions`](https://github.com/robot-descriptions/robot_descriptions.py).**
 
-- [3D printed parts](https://www.printables.com/model/127831-upkie-wheeled-biped-robot)
-- [Locomotion code](https://github.com/tasts-robots/upkie_locomotion)
-- [Project log](https://hackaday.io/project/185729/logs)
-
-Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
+URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped. 
 
 ## Python module
 
@@ -42,3 +38,7 @@ It then provides the following paths:
         Path to the URDF file of the model.
     </dd>
 </dl>
+
+## Acknowledgements
+
+Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
