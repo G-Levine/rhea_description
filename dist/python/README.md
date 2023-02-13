@@ -41,4 +41,4 @@ It then provides the following paths:
 
 ## Acknowledgements
 
-Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
+Upkie's torso derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
