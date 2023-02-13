@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+
+- Rename "chassis" to "torso"
+
 ## [1.1.0] - 2022/05/23
 
 ### Added

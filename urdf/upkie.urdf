@@ -25,7 +25,7 @@ Conventions in this file:
 
 - A fixed joint is named "<child_link>_fix", for instance the
   "left_hip_qdd100_stator_fix" that attaches the qdd100 stator of the left-hip
-  assembly to the chassis.
+  assembly to the torso.
 
 Note that the moteus convention is that positive angles correspond to clockwise
 rotations when looking at the rotor / back of the moteus board. This is
@@ -127,9 +127,9 @@ And in case of doubt:
         <child link="imu" />
     </joint>
 
-    <!-- Chassis -->
+    <!-- Torso -->
 
-    <link name="chassis">
+    <link name="torso">
         <visual>
             <geometry>
                 <box size="0.125 0.17 0.25" />
@@ -148,10 +148,10 @@ And in case of doubt:
         </inertial>
     </link>
 
-    <joint name="chassis_fix" type="fixed">
+    <joint name="torso_fix" type="fixed">
         <origin rpy="0 0 0" xyz="0 0 -0.1"/>
         <parent link="base" />
-        <child link="chassis" />
+        <child link="torso" />
     </joint>
 
     <!-- Battery -->
@@ -177,7 +177,7 @@ And in case of doubt:
 
     <joint name="battery_fix" type="fixed">
         <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="-0.04 0 0"/>
-        <parent link="chassis" />
+        <parent link="torso" />
         <child link="battery" />
     </joint>
 
@@ -206,7 +206,7 @@ And in case of doubt:
 
     <joint name="handle_fix" type="fixed">
         <origin rpy="0 0 -1.5707963267948966" xyz="0 0 0.135"/>
-        <parent link="chassis" />
+        <parent link="torso" />
         <child link="handle" />
     </joint>
 
@@ -237,7 +237,7 @@ And in case of doubt:
 
     <joint name="left_hip_qdd100_stator_fix" type="fixed">
         <origin rpy="-1.5707963267948966 0 0" xyz="0.0 0.085 -0.064"/>
-        <parent link="chassis" />
+        <parent link="torso" />
         <child link="left_hip_qdd100_stator" />
     </joint>
 
@@ -717,7 +717,7 @@ And in case of doubt:
 
     <joint name="right_hip_qdd100_stator_fix" type="fixed">
         <origin rpy="1.5707963267948966 3.141592653589793 0" xyz="0.0 -0.085 -0.064"/>
-        <parent link="chassis" />
+        <parent link="torso" />
         <child link="right_hip_qdd100_stator" />
     </joint>
 

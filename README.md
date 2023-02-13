@@ -8,7 +8,7 @@ URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheele
 - [Locomotion code](https://github.com/tasts-robots/upkie_locomotion)
 - [Project log](https://hackaday.io/project/185729/logs)
 
-Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
+Upkie's torso derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
 
 ## License
 
