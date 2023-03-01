@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package>
-  <name>upkie_description</name>
+  <name>rhea_description</name>
   <version>1.1.1</version>
-  <description>Description package for the Upkie wheeled biped robot</description>
-  <author>Stéphane Caron</author>
-  <maintainer email="stephane.caron@normalesup.org">Stéphane Caron</maintainer>
+  <description>Description package for the Rhea wheeled biped robot</description>
+  <author>Gabrael Levine</author>
+  <maintainer email="gabrael@cs.stanford.edu">Gabrael Levine</maintainer>
   <license>Apache 2.0</license>
-  <url>https://github.com/tasts-robots/upkie_description</url>
+  <url>https://github.com/tasts-robots/rhea_description</url>
   <buildtool_depend>catkin</buildtool_depend>
 </package>

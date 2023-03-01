@@ -1,6 +1,6 @@
 # -*- python -*-
 #
-# Copyright 2022 Stéphane Caron
+# Copyright 2023 Gabrael Levine
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 package(default_visibility = ["//visibility:public"])
 
 filegroup(
-    name = "upkie_description",
+    name = "rhea_description",
     srcs = glob([
-        "**/*.stl",
-        "urdf/upkie.urdf",
+        "**/*.dae",
+        "urdf/rhea.urdf",
     ])
 )

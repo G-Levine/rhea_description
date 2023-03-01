@@ -1,7 +1,7 @@
 #!/bin/sh
 
 SOURCE_DESCRIPTION=$(dirname $0)/../..
-TARGET_DESCRIPTION=$(dirname $0)/upkie_description
+TARGET_DESCRIPTION=$(dirname $0)/rhea_description
 echo ${SOURCE_DESCRIPTION}
 echo ${TARGET_DESCRIPTION}
 

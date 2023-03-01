@@ -1,6 +1,6 @@
-# CMakeLists.txt -- Upkie description package
+# CMakeLists.txt -- Rhea description package
 #
-# Copyright 2022 Stéphane Caron
+# Copyright 2023 Gabrael Levine
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 # limitations under the License.
 
 cmake_minimum_required(VERSION 3.1)
-project(upkie_description VERSION 1.1.1)
+project(rhea_description VERSION 1.1.1)
 
 find_package(catkin)
 

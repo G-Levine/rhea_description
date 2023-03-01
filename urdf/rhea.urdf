@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="rhea">
+
+    <link name="base_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="3.0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="rhea_mesh">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/simple_bot_mesh.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Aluminum_-_Anodized_Rough_(Grey)_1"/>
+      </visual>
+      <collision name="Cube">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.24 0.14 0.22"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="leg_1_l">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.1"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="rhea_mesh.006">
+        <origin xyz="0 0 0" rpy="1.5708 0 -2.0944"/>
+        <geometry>
+          <mesh filename="../meshes/dae/simple_bot_mesh.006.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="PA_12_-_Nylon_-_PA_603-CF_(with_EOS_P_3D_Printers)"/>
+      </visual>
+    </link>
+
+    <link name="leg_1_r">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.1"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="rhea_mesh.003">
+        <origin xyz="0 0 0" rpy="-1.5708 0 2.0944"/>
+        <geometry>
+          <mesh filename="../meshes/dae/simple_bot_mesh.003.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="PA_12_-_Nylon_-_PA_603-CF_(with_EOS_P_3D_Printers)"/>
+      </visual>
+    </link>
+
+    <link name="leg_2_l">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.1"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="rhea_mesh.005">
+        <origin xyz="0 0 0" rpy="1.5708 0 -1.0472"/>
+        <geometry>
+          <mesh filename="../meshes/dae/simple_bot_mesh.005.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="PA_12_-_Nylon_-_PA_603-CF_(with_EOS_P_3D_Printers)"/>
+      </visual>
+      <collision name="Cylinder.002">
+        <origin xyz="-0.025 0.065 -0.00764" rpy="0 0 -1.0472"/>
+        <geometry>
+          <cylinder radius="0.03428" length="0.02438"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="leg_2_r">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.1"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="rhea_mesh.002">
+        <origin xyz="0 0 0" rpy="-1.5708 0 1.0472"/>
+        <geometry>
+          <mesh filename="../meshes/dae/simple_bot_mesh.002.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="PA_12_-_Nylon_-_PA_603-CF_(with_EOS_P_3D_Printers)"/>
+      </visual>
+      <collision name="Cylinder">
+        <origin xyz="-0.025 -0.065 -0.00764" rpy="0 0 1.0472"/>
+        <geometry>
+          <cylinder radius="0.03428" length="0.02438"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="wheel_l">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.4"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="rhea_mesh.004">
+        <origin xyz="0 0 0" rpy="1.5708 0 -1.0472"/>
+        <geometry>
+          <mesh filename="../meshes/dae/simple_bot_mesh.004.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Aluminum_-_Anodized_Rough_(Grey)"/>
+      </visual>
+      <collision name="Cylinder.003">
+        <origin xyz="0 0 0.0415" rpy="0 0 -1.0472"/>
+        <geometry>
+          <cylinder radius="0.1" length="0.024"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="wheel_r">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.4"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="rhea_mesh.001">
+        <origin xyz="0 0 0" rpy="-1.5708 0 1.0472"/>
+        <geometry>
+          <mesh filename="../meshes/dae/simple_bot_mesh.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Aluminum_-_Anodized_Rough_(Grey)"/>
+      </visual>
+      <collision name="Cylinder.001">
+        <origin xyz="0 0 0.0415" rpy="0 0 1.0472"/>
+        <geometry>
+          <cylinder radius="0.1" length="0.024"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="leg_1_l" type="revolute">
+      <origin xyz="0 0.1 0" rpy="-1.5708 1.5708 0"/>
+      <parent link="base_link"/>
+      <child link="leg_1_l"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="0.5236" upper="1.39626" effort="35.0" velocity="26.0"/>
+    </joint>
+
+    <joint name="leg_1_r" type="revolute">
+      <origin xyz="0 -0.1 0" rpy="1.5708 1.5708 0"/>
+      <parent link="base_link"/>
+      <child link="leg_1_r"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.39626" upper="-0.5236" effort="35.0" velocity="26.0"/>
+    </joint>
+
+    <joint name="leg_2_l" type="revolute">
+      <origin xyz="0.225 0 0" rpy="0 0 0"/>
+      <parent link="leg_1_l"/>
+      <child link="leg_2_l"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.79253" upper="-1.0472" effort="35.0" velocity="26.0"/>
+    </joint>
+
+    <joint name="leg_2_r" type="revolute">
+      <origin xyz="0.225 0 0" rpy="0 0 0"/>
+      <parent link="leg_1_r"/>
+      <child link="leg_2_r"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="1.0472" upper="2.79253" effort="35.0" velocity="26.0"/>
+    </joint>
+
+    <joint name="wheel_l" type="continuous">
+      <origin xyz="0.225 0 0" rpy="0 0 0"/>
+      <parent link="leg_2_l"/>
+      <child link="wheel_l"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="9.0" velocity="42.0"/>
+    </joint>
+
+    <joint name="wheel_r" type="continuous">
+      <origin xyz="0.225 0 0" rpy="0 0 0"/>
+      <parent link="leg_2_r"/>
+      <child link="wheel_r"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="9.0" velocity="42.0"/>
+    </joint>
+
+    <material name="Aluminum_-_Anodized_Rough_(Grey)">
+      <color rgba="0.28627 0.28627 0.28627 1.0"/>
+    </material>
+
+    <material name="Aluminum_-_Anodized_Rough_(Grey)_1">
+      <color rgba="0.28627 0.28627 0.28627 1.0"/>
+    </material>
+
+    <material name="PA_12_-_Nylon_-_PA_603-CF_(with_EOS_P_3D_Printers)">
+      <color rgba="0.24706 0.24706 0.24706 1.0"/>
+    </material>
+
+  </robot>
