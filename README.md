@@ -7,3 +7,7 @@ URDF description for the Rhea wheeled biped.
 ## License
 
 The Apache 2.0 license applies to all files in this repository.
+
+## Acknowledgements
+
+Repository structure copied from [Upkie](https://github.com/tasts-robots/upkie_description).
