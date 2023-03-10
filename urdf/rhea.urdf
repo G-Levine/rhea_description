@@ -23,6 +23,9 @@
       </collision>
     </link>
 
+    <link name="imu">
+    </link>
+
     <link name="leg_1_l">
       <inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -136,6 +139,12 @@
         </geometry>
       </collision>
     </link>
+
+    <joint name="imu" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="imu"/>
+    </joint>
 
     <joint name="leg_1_l" type="revolute">
       <origin xyz="0 0.1 0" rpy="-1.5708 1.5708 0"/>
