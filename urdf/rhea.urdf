@@ -24,6 +24,11 @@
     </link>
 
     <link name="imu">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
     </link>
 
     <link name="left_hip">
@@ -141,7 +146,7 @@
     </link>
 
     <joint name="imu" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
       <parent link="base_link"/>
       <child link="imu"/>
     </joint>
