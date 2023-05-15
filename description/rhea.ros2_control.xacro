@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="rhea_system">
+        <ros2_control name="pi3hat_hardware_interface" type="system">
+            <hardware>
+                <plugin>pi3hat_hardware_interface/Pi3HatHardwareInterface</plugin>
+                <param name="imu_mounting_deg.yaw">0</param>
+                <param name="imu_mounting_deg.pitch">0</param>
+                <param name="imu_mounting_deg.roll">0</param>
+            </hardware>
+
+            <joint name="right_hip">
+                <param name="can_channel">1</param>
+                <param name="can_id">1</param>
+                <param name="can_protocol">cheetah</param>
+
+                <param name="position_scale">95.5</param>
+                <param name="velocity_scale">30.0</param>
+                <param name="effort_scale">18.0</param>
+                <param name="kp_scale">500.0</param>
+                <param name="kd_scale">5.0</param>
+                <param name="axis_direction">-1</param>
+                <param name="position_offset">0.0</param>
+
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="effort"/>
+                <command_interface name="kp"/>
+                <command_interface name="kd"/>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+
+            <joint name="right_wheel">
+                <param name="can_channel">1</param>
+                <param name="can_id">2</param>
+                <param name="can_protocol">cheetah</param>
+
+                <param name="position_scale">95.5</param>
+                <param name="velocity_scale">30.0</param>
+                <param name="effort_scale">18.0</param>
+                <param name="kp_scale">500.0</param>
+                <param name="kd_scale">5.0</param>
+                <param name="axis_direction">-1</param>
+                <param name="position_offset">0.0</param>
+
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="effort"/>
+                <command_interface name="kp"/>
+                <command_interface name="kd"/>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+
+            <joint name="left_hip">
+                <param name="can_channel">2</param>
+                <param name="can_id">1</param>
+                <param name="can_protocol">cheetah</param>
+
+                <param name="position_scale">95.5</param>
+                <param name="velocity_scale">30.0</param>
+                <param name="effort_scale">18.0</param>
+                <param name="kp_scale">500.0</param>
+                <param name="kd_scale">5.0</param>
+                <param name="axis_direction">-1</param>
+                <param name="position_offset">0.0</param>
+
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="effort"/>
+                <command_interface name="kp"/>
+                <command_interface name="kd"/>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+
+            <joint name="left_wheel">
+                <param name="can_channel">2</param>
+                <param name="can_id">2</param>
+                <param name="can_protocol">cheetah</param>
+
+                <param name="position_scale">95.5</param>
+                <param name="velocity_scale">30.0</param>
+                <param name="effort_scale">18.0</param>
+                <param name="kp_scale">500.0</param>
+                <param name="kd_scale">5.0</param>
+                <param name="axis_direction">-1</param>
+                <param name="position_offset">0.0</param>
+
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="effort"/>
+                <command_interface name="kp"/>
+                <command_interface name="kd"/>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+
+            <sensor name="imu_sensor">
+                <state_interface name="orientation.x"/>
+                <state_interface name="orientation.y"/>
+                <state_interface name="orientation.z"/>
+                <state_interface name="orientation.w"/>
+                <state_interface name="angular_velocity.x"/>
+                <state_interface name="angular_velocity.y"/>
+                <state_interface name="angular_velocity.z"/>
+                <state_interface name="linear_acceleration.x"/>
+                <state_interface name="linear_acceleration.y"/>
+                <state_interface name="linear_acceleration.z"/>
+            </sensor>
+        </ros2_control>
+    </xacro:macro>
+
+</robot>
