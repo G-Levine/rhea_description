@@ -21,7 +21,7 @@
                 <param name="kp_scale">500.0</param>
                 <param name="kd_scale">5.0</param>
                 <param name="axis_direction">-1</param>
-                <param name="position_offset">0.0</param>
+                <param name="position_offset">-1.39626</param>
 
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
@@ -60,7 +60,7 @@
 
             <joint name="left_hip">
                 <param name="can_channel">2</param>
-                <param name="can_id">1</param>
+                <param name="can_id">3</param>
                 <param name="can_protocol">cheetah</param>
 
                 <param name="position_scale">95.5</param>
@@ -69,7 +69,7 @@
                 <param name="kp_scale">500.0</param>
                 <param name="kd_scale">5.0</param>
                 <param name="axis_direction">-1</param>
-                <param name="position_offset">0.0</param>
+                <param name="position_offset">1.39626</param>
 
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
@@ -84,7 +84,7 @@
 
             <joint name="left_wheel">
                 <param name="can_channel">2</param>
-                <param name="can_id">2</param>
+                <param name="can_id">4</param>
                 <param name="can_protocol">cheetah</param>
 
                 <param name="position_scale">95.5</param>
