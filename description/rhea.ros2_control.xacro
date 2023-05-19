@@ -25,10 +25,10 @@
 
                 <param name="position_min">-1.39626</param>
                 <param name="position_max">-0.523599</param>
-                <param name="velocity_max">1.0</param>
-                <param name="effort_max">1.0</param>
-                <param name="kp_max">1.0</param>
-                <param name="kd_max">1.0</param>
+                <param name="velocity_max">10.0</param>
+                <param name="effort_max">10.0</param>
+                <param name="kp_max">100.0</param>
+                <param name="kd_max">10.0</param>
 
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
@@ -56,10 +56,10 @@
 
                 <param name="position_min">-1.0</param>
                 <param name="position_max">1.0</param>
-                <param name="velocity_max">1.0</param>
-                <param name="effort_max">1.0</param>
-                <param name="kp_max">1.0</param>
-                <param name="kd_max">1.0</param>
+                <param name="velocity_max">10.0</param>
+                <param name="effort_max">10.0</param>
+                <param name="kp_max">100.0</param>
+                <param name="kd_max">10.0</param>
 
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
@@ -87,10 +87,10 @@
 
                 <param name="position_min">0.523599</param>
                 <param name="position_max">1.39626</param>
-                <param name="velocity_max">1.0</param>
-                <param name="effort_max">1.0</param>
-                <param name="kp_max">1.0</param>
-                <param name="kd_max">1.0</param>
+                <param name="velocity_max">10.0</param>
+                <param name="effort_max">10.0</param>
+                <param name="kp_max">100.0</param>
+                <param name="kd_max">10.0</param>
 
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
@@ -118,10 +118,10 @@
 
                 <param name="position_min">-1.0</param>
                 <param name="position_max">1.0</param>
-                <param name="velocity_max">1.0</param>
-                <param name="effort_max">1.0</param>
-                <param name="kp_max">1.0</param>
-                <param name="kd_max">1.0</param>
+                <param name="velocity_max">10.0</param>
+                <param name="effort_max">10.0</param>
+                <param name="kp_max">100.0</param>
+                <param name="kd_max">10.0</param>
 
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
