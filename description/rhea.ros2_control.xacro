@@ -5,9 +5,9 @@
         <ros2_control name="pi3hat_hardware_interface" type="system">
             <hardware>
                 <plugin>pi3hat_hardware_interface/Pi3HatHardwareInterface</plugin>
-                <param name="imu_mounting_deg.yaw">0</param>
-                <param name="imu_mounting_deg.pitch">0</param>
-                <param name="imu_mounting_deg.roll">0</param>
+                <param name="imu_mounting_deg.yaw">90.0</param>
+                <param name="imu_mounting_deg.pitch">0.0</param>
+                <param name="imu_mounting_deg.roll">90.0</param>
             </hardware>
 
             <joint name="right_hip">
@@ -22,6 +22,13 @@
                 <param name="kd_scale">5.0</param>
                 <param name="axis_direction">-1</param>
                 <param name="position_offset">-1.39626</param>
+
+                <param name="position_min">-1.39626</param>
+                <param name="position_max">-0.523599</param>
+                <param name="velocity_max">1.0</param>
+                <param name="effort_max">1.0</param>
+                <param name="kp_max">1.0</param>
+                <param name="kd_max">1.0</param>
 
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
@@ -47,6 +54,13 @@
                 <param name="axis_direction">-1</param>
                 <param name="position_offset">0.0</param>
 
+                <param name="position_min">-1.0</param>
+                <param name="position_max">1.0</param>
+                <param name="velocity_max">1.0</param>
+                <param name="effort_max">1.0</param>
+                <param name="kp_max">1.0</param>
+                <param name="kd_max">1.0</param>
+
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
                 <command_interface name="effort"/>
@@ -71,6 +85,13 @@
                 <param name="axis_direction">-1</param>
                 <param name="position_offset">1.39626</param>
 
+                <param name="position_min">0.523599</param>
+                <param name="position_max">1.39626</param>
+                <param name="velocity_max">1.0</param>
+                <param name="effort_max">1.0</param>
+                <param name="kp_max">1.0</param>
+                <param name="kd_max">1.0</param>
+
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
                 <command_interface name="effort"/>
@@ -94,6 +115,13 @@
                 <param name="kd_scale">5.0</param>
                 <param name="axis_direction">-1</param>
                 <param name="position_offset">0.0</param>
+
+                <param name="position_min">-1.0</param>
+                <param name="position_max">1.0</param>
+                <param name="velocity_max">1.0</param>
+                <param name="effort_max">1.0</param>
+                <param name="kp_max">1.0</param>
+                <param name="kd_max">1.0</param>
 
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
