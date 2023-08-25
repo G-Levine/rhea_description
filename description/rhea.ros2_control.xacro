@@ -5,9 +5,9 @@
         <ros2_control name="pi3hat_hardware_interface" type="system">
             <hardware>
                 <plugin>pi3hat_hardware_interface/Pi3HatHardwareInterface</plugin>
-                <param name="imu_mounting_deg.yaw">90.0</param>
+                <param name="imu_mounting_deg.yaw">-90.0</param>
                 <param name="imu_mounting_deg.pitch">0.0</param>
-                <param name="imu_mounting_deg.roll">-90.0</param>
+                <param name="imu_mounting_deg.roll">90.0</param>
             </hardware>
 
             <joint name="right_hip">
