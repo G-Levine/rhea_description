@@ -7,7 +7,7 @@
                 <plugin>pi3hat_hardware_interface/Pi3HatHardwareInterface</plugin>
                 <param name="imu_mounting_deg.yaw">90.0</param>
                 <param name="imu_mounting_deg.pitch">0.0</param>
-                <param name="imu_mounting_deg.roll">90.0</param>
+                <param name="imu_mounting_deg.roll">-90.0</param>
             </hardware>
 
             <joint name="right_hip">
@@ -21,10 +21,41 @@
                 <param name="kp_scale">500.0</param>
                 <param name="kd_scale">5.0</param>
                 <param name="axis_direction">-1</param>
-                <param name="position_offset">-1.39626</param>
+                <param name="position_offset">-2.46091</param>
 
-                <param name="position_min">-1.39626</param>
-                <param name="position_max">-0.523599</param>
+                <param name="position_min">-2.46091</param>
+                <param name="position_max">0.68068</param>
+                <param name="velocity_max">10.0</param>
+                <param name="effort_max">10.0</param>
+                <param name="kp_max">100.0</param>
+                <param name="kd_max">10.0</param>
+
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="effort"/>
+                <command_interface name="kp"/>
+                <command_interface name="kd"/>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+
+            <joint name="right_knee">
+                <param name="can_channel">1</param>
+                <param name="can_id">2</param>
+                <param name="can_protocol">cheetah</param>
+
+                <param name="position_scale">95.5</param>
+                <param name="velocity_scale">30.0</param>
+                <param name="effort_scale">18.0</param>
+                <param name="kp_scale">500.0</param>
+                <param name="kd_scale">5.0</param>
+                <param name="axis_direction">-1</param>
+                <param name="position_offset">2.75762</param>
+
+                <param name="position_min">0.66323</param>
+                <param name="position_max">2.75762</param>
                 <param name="velocity_max">10.0</param>
                 <param name="effort_max">10.0</param>
                 <param name="kp_max">100.0</param>
@@ -43,11 +74,11 @@
 
             <joint name="right_wheel">
                 <param name="can_channel">1</param>
-                <param name="can_id">2</param>
+                <param name="can_id">3</param>
                 <param name="can_protocol">cheetah</param>
 
-                <param name="position_scale">95.5</param>
-                <param name="velocity_scale">30.0</param>
+                <param name="position_scale">12.5</param>
+                <param name="velocity_scale">200.0</param>
                 <param name="effort_scale">18.0</param>
                 <param name="kp_scale">500.0</param>
                 <param name="kd_scale">5.0</param>
@@ -56,6 +87,37 @@
 
                 <param name="position_min">-1.0</param>
                 <param name="position_max">1.0</param>
+                <param name="velocity_max">30.0</param>
+                <param name="effort_max">10.0</param>
+                <param name="kp_max">100.0</param>
+                <param name="kd_max">2.0</param>
+
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <command_interface name="effort"/>
+                <command_interface name="kp"/>
+                <command_interface name="kd"/>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+
+            <joint name="left_hip">
+                <param name="can_channel">2</param>
+                <param name="can_id">4</param>
+                <param name="can_protocol">cheetah</param>
+
+                <param name="position_scale">95.5</param>
+                <param name="velocity_scale">30.0</param>
+                <param name="effort_scale">18.0</param>
+                <param name="kp_scale">500.0</param>
+                <param name="kd_scale">5.0</param>
+                <param name="axis_direction">-1</param>
+                <param name="position_offset">2.46091</param>
+
+                <param name="position_min">-0.68068</param>
+                <param name="position_max">2.46091</param>
                 <param name="velocity_max">10.0</param>
                 <param name="effort_max">10.0</param>
                 <param name="kp_max">100.0</param>
@@ -72,9 +134,9 @@
                 <state_interface name="effort"/>
             </joint>
 
-            <joint name="left_hip">
+            <joint name="left_knee">
                 <param name="can_channel">2</param>
-                <param name="can_id">3</param>
+                <param name="can_id">5</param>
                 <param name="can_protocol">cheetah</param>
 
                 <param name="position_scale">95.5</param>
@@ -83,10 +145,10 @@
                 <param name="kp_scale">500.0</param>
                 <param name="kd_scale">5.0</param>
                 <param name="axis_direction">-1</param>
-                <param name="position_offset">1.39626</param>
+                <param name="position_offset">-2.75762</param>
 
-                <param name="position_min">0.523599</param>
-                <param name="position_max">1.39626</param>
+                <param name="position_min">-2.75762</param>
+                <param name="position_max">-0.66323</param>
                 <param name="velocity_max">10.0</param>
                 <param name="effort_max">10.0</param>
                 <param name="kp_max">100.0</param>
@@ -105,11 +167,11 @@
 
             <joint name="left_wheel">
                 <param name="can_channel">2</param>
-                <param name="can_id">4</param>
+                <param name="can_id">6</param>
                 <param name="can_protocol">cheetah</param>
 
-                <param name="position_scale">95.5</param>
-                <param name="velocity_scale">30.0</param>
+                <param name="position_scale">12.5</param>
+                <param name="velocity_scale">200.0</param>
                 <param name="effort_scale">18.0</param>
                 <param name="kp_scale">500.0</param>
                 <param name="kd_scale">5.0</param>
@@ -118,8 +180,8 @@
 
                 <param name="position_min">-1.0</param>
                 <param name="position_max">1.0</param>
-                <param name="velocity_max">10.0</param>
-                <param name="effort_max">10.0</param>
+                <param name="velocity_max">30.0</param>
+                <param name="effort_max">2.0</param>
                 <param name="kp_max">100.0</param>
                 <param name="kd_max">10.0</param>
 
