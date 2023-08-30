@@ -11,7 +11,7 @@
             </hardware>
 
             <joint name="right_hip">
-                <param name="can_channel">1</param>
+                <param name="can_channel">3</param>
                 <param name="can_id">1</param>
                 <param name="can_protocol">cheetah</param>
 
@@ -82,7 +82,7 @@
                 <param name="effort_scale">18.0</param>
                 <param name="kp_scale">500.0</param>
                 <param name="kd_scale">5.0</param>
-                <param name="axis_direction">-1</param>
+                <param name="axis_direction">1</param>
                 <param name="position_offset">0.0</param>
 
                 <param name="position_min">-1.0</param>
@@ -104,7 +104,7 @@
             </joint>
 
             <joint name="left_hip">
-                <param name="can_channel">2</param>
+                <param name="can_channel">3</param>
                 <param name="can_id">4</param>
                 <param name="can_protocol">cheetah</param>
 
@@ -175,7 +175,7 @@
                 <param name="effort_scale">18.0</param>
                 <param name="kp_scale">500.0</param>
                 <param name="kd_scale">5.0</param>
-                <param name="axis_direction">-1</param>
+                <param name="axis_direction">1</param>
                 <param name="position_offset">0.0</param>
 
                 <param name="position_min">-1.0</param>
